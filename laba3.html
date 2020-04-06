@@ -10,7 +10,7 @@
 <body>
 <style>
 .kolonka{
-display: flex;	
+display: flex;
 flex-direction:column;
 align-items: center;
 padding:40px;
@@ -32,65 +32,79 @@ color:#353535;
 }
 .paragraf1{
 text-transform:uppercase;
-color:#353535;	
+color:#353535;
 font-family: 'Sen', sans-serif;
 }
 #paralel {
-	width: 50px;
-	height: 5px;
-	background:#3dc9b3;}
+width: 50px;
+height: 5px;
+background:#3dc9b3;}
 
 .line {
- 
- border-bottom: 2px  dotted #353535;
- width: 26%;
- margin-left: 700px;
- 
- 
-	}
+
+border-bottom: 2px dotted #353535;
+width:26%;
+margin-left: 700px;
+
+}
+
+.flex-grid-thirds {
+display: flex;
+justify-content: space-between;
+text-align: center;
+
+}
+.flex-grid-thirds .col {
+flex:1;
+}
 </style>
 
 <h3 class="paragraf" color:"#353535">Love what you do, and you will do it well</h3>
 
 <div class="line"></div>
 
-
-<div class="kolonka">
+<div class="flex-grid-thirds">
+<div class="col">
+<div class="kolonka ">
 <img id="computer" src="computer.png">
 <div class="paragraf1"><p><h4>Digital design//</h4></p></div>
 <div id="paralel"></div>
 <div class="text"><p><pre>Lorem ipsum dolor sit amet, consectetur
- adipiscing elit. Donec eget sem vel orci
- cursus dictum blandit in erat. Praesent
- ultricies lectus dolor, cursus vehicula
- elit laoreet non. Etiam suscipit arcu lectus,
- in tempor lectus molestie eget.</pre></p>
+adipiscing elit. Donec eget sem vel orci
+cursus dictum blandit in erat. Praesent
+ultricies lectus dolor, cursus vehicula
+elit laoreet non. Etiam suscipit arcu lectus,
+in tempor lectus molestie eget.</pre></p>
 </div>
 </div>
-
-<div  class="kolonka">
+</div>
+<div class="col">
+<div class="kolonka">
 <img id="code" src="code.png">
 <div class="paragraf1"><p><h4>Web development//</h4></p></div>
 <div id="paralel"></div>
 <div class="text"><p><pre>Lorem ipsum dolor sit amet, consectetur
- adipiscing elit. Donec eget sem vel orci
- cursus dictum blandit in erat. Praesent
- ultricies lectus dolor, cursus vehicula
- elit laoreet non. Etiam suscipit arcu lectus,
- in tempor lectus molestie eget.</pre></p>
+adipiscing elit. Donec eget sem vel orci
+cursus dictum blandit in erat. Praesent
+ultricies lectus dolor, cursus vehicula
+elit laoreet non. Etiam suscipit arcu lectus,
+in tempor lectus molestie eget.</pre></p>
 </div>
 </div>
-
-<div  class="kolonka">
+</div>
+<div class="col">
+<div class="kolonka">
 <img id="heart" src="heart.png">
 <div class="paragraf1"><p><h4>We love you//</h4></p></div>
 <div id="paralel"></div>
 <div class="text"><p><pre>Lorem ipsum dolor sit amet, consectetur
- adipiscing elit. Donec eget sem vel orci
- cursus dictum blandit in erat. Praesent
- ultricies lectus dolor, cursus vehicula
- elit laoreet non. Etiam suscipit arcu lectus,
- in tempor lectus molestie eget.</pre></p>
+adipiscing elit. Donec eget sem vel orci
+cursus dictum blandit in erat. Praesent
+ultricies lectus dolor, cursus vehicula
+elit laoreet non. Etiam suscipit arcu lectus,
+in tempor lectus molestie eget.</pre></p>
+</div>
+</div>
 </div>
 </div>
 
@@ -100,20 +114,19 @@ let code=document.getElementById("code");
 let heart=document.getElementById("heart");
 
 function myComputer(){
-			alert("Computer");
-	}
-	computer.addEventListener('click', myComputer);
+alert("Computer");
+}
+computer.addEventListener('click', myComputer);
 
-	function myCode(){
-			alert("Code");
-	}
-	code.addEventListener('click', myCode);
+function myCode(){
+alert("Code");
+}
+code.addEventListener('click', myCode);
 
-	function myHeart(){
-			alert("Heart");
-	}
-	heart.addEventListener('click', myHeart);
-
+function myHeart(){
+alert("Heart");
+}
+heart.addEventListener('click', myHeart);
 
 </script>
 
